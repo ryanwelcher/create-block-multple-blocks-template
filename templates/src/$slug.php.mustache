@@ -1,0 +1,26 @@
+<?php
+/**
+ * Plugin Name:       {{title}}
+{{#description}}
+ * Description:       {{description}}
+{{/description}}
+ * Requires at least: 5.8
+ * Requires PHP:      7.3
+ * Version:           {{version}}
+{{#author}}
+ * Author:            {{author}}
+{{/author}}
+{{#license}}
+ * License:           {{license}}
+{{/license}}
+{{#licenseURI}}
+ * License URI:       {{{licenseURI}}}
+{{/licenseURI}}
+ * Text Domain:       {{textdomain}}
+ *
+ * @package           {{namespace}}
+ */
+
+add_action( 'init', function() {
+    register_block_type( __DIR__ );
+} );
