@@ -1,26 +1,26 @@
 {
   "name": "@ryanwelcher/multiple-blocks-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template for use with @wordpress/create-block to support multiple blocks",
   "license": "GPL-2.0-or-later",
-	"keywords": [
-		"wordpress",
-		"create block",
-		"block template"
-	],
+  "keywords": [
+    "wordpress",
+    "create block",
+    "block template"
+  ],
   "author": {
     "name": "Ryan Welcher",
     "url": "https://ryanwelcher.com"
   },
   "homepage": "https://github.com/ryanwelcher/create-block-multple-blocks-template",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ryanwelcher/create-block-multple-blocks-template.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ryanwelcher/create-block-multple-blocks-template/issues"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanwelcher/create-block-multple-blocks-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanwelcher/create-block-multple-blocks-template/issues"
+  },
   "publishConfig": {
-		"access": "public"
-	}
+    "access": "public"
+  }
 }
