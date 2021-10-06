@@ -23,7 +23,9 @@
 
 function {{namespaceSnakeCase}}_{{slugSnakeCase}}_block_init() {
 
-	$blocks = array();
+	$blocks = array(
+		'{{slug}}/'
+	);
 
 	foreach ( $blocks as $block ) {
 		register_block_type( plugin_dir_path( __FILE__ ) . 'includes/block-editor/blocks/' . $block);
