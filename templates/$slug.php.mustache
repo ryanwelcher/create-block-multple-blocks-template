@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:       {{title}}
+ * Plugin Name:       {{namespace}}
 {{#description}}
  * Description:       {{description}}
 {{/description}}
  * Requires at least: 5.8
- * Requires PHP:      7.3
+ * Requires PHP:      7.0
  * Version:           {{version}}
 {{#author}}
  * Author:            {{author}}
@@ -21,6 +21,12 @@
  * @package           {{namespace}}
  */
 
-add_action( 'init', function() {
-    register_block_type( __DIR__ );
-} );
+function {{namespaceSnakeCase}}_{{slugSnakeCase}}_block_init() {
+
+	$blocks = array();
+
+	foreach ( $blocks as $block ) {
+		register_block_type( plugin_dir_path( __FILE__ ) . 'includes/block-editor/blocks/' . $block);
+	}
+}
+add_action( 'init', '{{namespaceSnakeCase}}_{{slugSnakeCase}}_blocks_block_init' );
