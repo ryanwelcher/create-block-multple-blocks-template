@@ -1,8 +1,6 @@
 const { join } = require( 'path' );
 
 module.exports = {
-    defaultValues: {
-        wpScripts: false
-    },
+    defaultValues: {},
     templatesPath: join( __dirname, 'templates' ),
 };
