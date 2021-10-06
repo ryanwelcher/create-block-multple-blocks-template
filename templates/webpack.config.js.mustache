@@ -3,6 +3,6 @@ const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 module.exports = {
 	...defaultConfig,
 	entry: {
-		'{{$slug}}': './includes/block-editor/blocks/{{$slug}}',
+		'{{slug}}': './includes/block-editor/blocks/{{slug}}',
 	},
 };
