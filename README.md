@@ -37,6 +37,6 @@ webpack.config.js
 
 ### Adding another block requires the following steps:
 
-1. Create new or copy one of the existing block folders into `./includes/blocks/`
+1. Create new or copy one of the existing block folders into `./includes/block-editor/blocks/`
 2. Update the `$blocks` array in the main plugin php file to include the new block.
 3. Add a new entry point in `webpack.config.js` that points to the new block.
