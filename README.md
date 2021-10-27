@@ -15,6 +15,7 @@ The name of the plugin ( example-plugin in the example above) is used as both th
 Once the command has completed, the following structure will be created.
 
 ```
+- assets - this contains an internal template for subsequent blocks
 - build
 - includes
 --> block-editor
@@ -37,6 +38,8 @@ webpack.config.js
 
 ### Adding another block requires the following steps:
 
-1. Create new or copy one of the existing block folders into `./includes/block-editor/blocks/`
-2. Update the `$blocks` array in the main plugin php file to include the new block.
+1. From the root of the plugin, cc into the includes/block-editor/blocks directory
+2. Run the following command: `npx @wordpress/create-block --template ../../../assets
 3. Add a new entry point in `webpack.config.js` that points to the new block.
+4. Update the `$blocks` array in the main plugin php file to include the new block.
+5. Update the editorScripts, editorStyles, and styles items in the newly added block.
