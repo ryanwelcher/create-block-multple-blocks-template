@@ -1,6 +1,6 @@
 {
   "name": "@ryanwelcher/multiple-blocks-template",
-  "version": "1.3.0",
+  "version": "1.2.1",
   "description": "A template for use with @wordpress/create-block to support multiple blocks",
   "license": "GPL-2.0-or-later",
   "keywords": [
