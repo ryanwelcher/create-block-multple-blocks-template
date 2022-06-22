@@ -1,14 +1,22 @@
 # multiple-blocks-template
 
-This template will scaffold a plugin that is set up for registering multiple blocks in a single plugin create using the [`@wordpress/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) tool. 
+This template will scaffold a plugin that is set up for registering multiple blocks in a single plugin create using the [`@wordpress/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) tool.
 
 ## Usage
+
 Run the following in the terminal of your choice:
 
 `npx @wordpress/create-block example-plugin --template @ryanwelcher/multiple-blocks-template`
 
 The name of the plugin ( example-plugin in the example above) is used as both the name of the plugin and the name of the block being created. This is due to the current `@wordpress/create-block` tool expecting a single block per plugin.
 
+Once plugin installation is complete, you will need to install [Glob]('https://www.npmjs.com/package/glob') as a dev dependancy. you can do that by running the following command.
+
+`npm i glob`
+
+then run the start script again.
+
+`npm run start`
 
 ## Structure
 
