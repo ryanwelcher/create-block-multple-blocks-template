@@ -1,8 +1,15 @@
 
-const defaultConfig = require('@wordpress/scripts/config/webpack.config');
+const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const glob = require( 'glob' );
+
 module.exports = {
 	...defaultConfig,
-	entry: {
-		'{{slug}}': './includes/block-editor/blocks/{{slug}}',
-	},
+	entry: glob
+		.sync( './includes/block-editor/blocks/**/index.js' )
+		.reduce( ( acc, path ) => {
+			const entry = path.replace( '/index.js', '' );
+			const name = entry.substring( entry.lastIndexOf( '/' ) + 1 );
+			acc[ name ] = path;
+			return acc;
+		}, {} ),
 };
