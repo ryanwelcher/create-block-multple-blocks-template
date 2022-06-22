@@ -4,9 +4,6 @@ const glob = require( 'glob' );
 
 module.exports = {
 	...defaultConfig,
-	// entry: {
-	// 	't29-blocks-plugin': './includes/block-editor/blocks/t29-blocks-plugin',
-	// },
 	entry: glob
 		.sync( './includes/block-editor/blocks/**/index.js' )
 		.reduce( ( acc, path ) => {
